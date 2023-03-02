@@ -5,16 +5,38 @@
 }
 
 body{
-    font-family: 'Trykker', serif;
     background-color: #045A41;
     background-image: linear-gradient(135deg, #045A41 0%, #043B5A 45%);
     color: #fff;
 }
-span{
-    margin-left: 1.4em;
-}
+
 h2{
-    font-weight: 100;
+    font-family: 'trykker', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 38px;
+    text-align: right;
+}
+
+h3{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    font-style: normal;
+}
+a:link,a:visited{
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.7;
+}
+p{
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 20px; 
+   opacity: 0.7; 
+   
 }
 .searchinfo{
     display: flex;
@@ -39,7 +61,7 @@ input#searchBar, .container{
     padding: 0.5em;
     background-color: transparent;
     color: #fff;       
-    object-fit: cover;         
+           
 }
 input::placeholder{
     color: #fff;
@@ -73,13 +95,10 @@ button{
     background-color: transparent;
     color: #fff;
     border-radius: 50px;
-    background: rgba( 30, 124, 237, 0.25 );
-    background-color: #045A41;
-    background-image: linear-gradient(210deg, #125259 0%, #043B5A 70%);
-    backdrop-filter: blur( 10.5px );
-    -webkit-backdrop-filter: blur( 10.5px );
+    background: linear-gradient(232.49deg, rgba(4, 90, 64, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
     border: 1px solid #fff;
     margin: 1em;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .avatar{
@@ -87,12 +106,169 @@ button{
     height: 10em;
     border-radius: 50%;
     object-fit: cover;
-    margin: 0 auto;
-    
-}
-p,h3,.avatar{
+    margin: 30 auto;
+    display: flex;
+    justify-content: center;
+ }
+.center{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.inline{
+    display: flex;
+    justify-content: center;
+    margin-left: 55px;
+    gap:1em;
+    flex-direction: column;
+
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap:4em;
+}
+
+pre{
+    font-family: "montserrat", sans-serif;
+    word-wrap: break-word;
+    margin:auto
+}
+
+.bottom{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin:3em;
+    text-align: center;
+}
+.bioInfo{
+    font-weight: 700;
+    word-wrap: break-word;
+    width: 310px;
+}
+
+.vl{
+    display: hidden;
+}
+
+
+
+@media screen and (min-width: 1024px){
+
+    .body{
+    width: 100dvw;
+    height: 100vh;
+    
+    }
+
+    .findProfile{
+    display: flex;
+    width: 30dvw;
+        }
+     h2 {
+    font-size: 80px;
+    line-height: 80px;
+    font-style: normal;
+    text-align: right;
+    margin-left: 1em;
+    height: 40vh;
+      } 
+    input#searchBar{
+    width: 20dvw; 
+    height: 5vh;  
+    font-size:  25px;
+    }  
+    #searchBtn{
+    font-size: 20px;
+    width: auto; 
+        
+    }
+    .vl{
+    position:absolute;
+    width: 650px;
+    height: 0;
+    left: 35%;
+    top:0;
+    border: 1px solid #fff;
+    border-width: 1px 1px 1px 1px;
+    transform: rotate(90deg);
+    transform-origin: left top;
+     }  
+    .shadow{
+    border-radius: 50%;
+    width: 80%;
+    margin: auto;
+    height: 100px;
+    background: black;
+    opacity: 0.2;
+    -webkit-filter: blur(20px);
+    -webkit-transform: scale(1, 0.2);  
+        
+    }
+
+    
+    .main{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    height: 80vh;
+    }
+ 
+    .show {
+    display: grid;
+    grid-template-columns: 34% repeat(2, 33%);
+    grid-template-rows: 34% repeat(2, 33%);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 55dvw;
+    height: 50vh;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    backdrop-filter: blur( 15.5px );
+    -webkit-backdrop-filter: blur( 15.5px );
+    background: rgba( 255, 255, 255, 0.12 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 )
+     }
+    .avatar { 
+    grid-area: 1 / 1 / 2 / 2; 
+    margin-top: 4em;  
+     }
+    .stat { 
+    grid-area: 1 / 2 / 2 / 4; 
+    
+    font-size: 30px;
+    }
+    .pseudo { 
+    grid-area: 2 / 1 / 3 / 2;
+    margin-bottom: 4em;
+    }
+    .inline { 
+    grid-area: 3 / 1 / 4 / 2;
+    gap:2em;
+    margin-bottom: 4em;
+    font-size: 15px;
+    }
+    
+    .bio{ 
+    grid-area: 2 / 2 / 3 / 3;
+    font-size: larger; 
+    width: 30dvw;
+    }
+
+    .bioInfo{
+    font-weight: 700;
+    word-wrap: break-word;
+    width: 400px;
+    }
+    .bottom { 
+    grid-area: 3 / 3 / 4 / 4; 
+    text-align: right;
+    font-size: 30px;
+    }
 }
