@@ -157,8 +157,6 @@ pre{
     display: hidden;
 }
 
-
-
 @media screen and (min-width: 1024px){
 
     .body{
@@ -191,7 +189,7 @@ pre{
     }
     .vl{
     position:absolute;
-    width: 650px;
+    width: 45%;
     height: 0;
     left: 35%;
     top:0;
@@ -212,7 +210,6 @@ pre{
         
     }
 
-    
     .main{
     display: flex;
     flex-direction: row;
@@ -237,38 +234,41 @@ pre{
      }
     .avatar { 
     grid-area: 1 / 1 / 2 / 2; 
-    margin-top: 4em;  
+    margin-top: 4em; 
+    
      }
     .stat { 
     grid-area: 1 / 2 / 2 / 4; 
     
-    font-size: 30px;
+    
     }
     .pseudo { 
     grid-area: 2 / 1 / 3 / 2;
-    margin-bottom: 4em;
+    margin-bottom: 2em;
     }
     .inline { 
     grid-area: 3 / 1 / 4 / 2;
-    gap:2em;
+    height: auto;
     margin-bottom: 4em;
-    font-size: 15px;
+    }
+    a{
+        font-size: 15px;
     }
     
     .bio{ 
     grid-area: 2 / 2 / 3 / 3;
     font-size: larger; 
-    width: 30dvw;
+    
     }
 
     .bioInfo{
     font-weight: 700;
     word-wrap: break-word;
-    width: 400px;
+    width: 350px;
     }
     .bottom { 
     grid-area: 3 / 3 / 4 / 4; 
     text-align: right;
-    font-size: 30px;
+    margin: auto;
     }
 }
