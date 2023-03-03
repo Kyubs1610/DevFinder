@@ -353,7 +353,7 @@ button{
      }
     .inline { 
     grid-area: 3 / 1 / 4 / 2;
-    margin: 0 0 0 auto;
+    margin: auto;
 
     }
     a{
