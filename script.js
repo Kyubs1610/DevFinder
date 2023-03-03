@@ -30,6 +30,12 @@ searchBTN.addEventListener('click', () => {
         devInfo.innerHTML = '';
     });
 
+    searchBar.addEventListener('keyup', function (e) {
+        if (e.key === 'Enter') {
+            searchBTN.click();          
+        }
+    });
+
     const displayUsers = (user) => {
       
         const { avatar_url, login,name, html_url,bio,company,twitter_username,location,followers,following,public_repos,created_at} = user;

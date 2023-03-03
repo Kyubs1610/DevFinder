@@ -74,6 +74,7 @@ input::placeholder{
 button{
     border-radius: 50px;
     border: solid 1px #fff;
+    background-color: transparent;
     padding: 0.5em 2em;
     color: #fff;
     font-weight: 100;
@@ -82,8 +83,6 @@ button{
     backdrop-filter: blur( 5px );
     -webkit-backdrop-filter: blur( 5px );
     background: rgba( 255, 255, 255, 0.12 );
-    background-color: #045A41;
-    background-image: linear-gradient(135deg, #0A4A55 0%, #0E4360 45%);
    
 }
 
@@ -98,7 +97,7 @@ button{
     background-color: transparent;
     color: #fff;
     border-radius: 50px;
-    background: linear-gradient(359.49deg, rgba(4, 90, 64, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(232.49deg, rgba(4, 90, 64, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
     border: 1px solid #fff;
     margin: 1rem;
     font-family: 'Montserrat', sans-serif;
@@ -354,8 +353,8 @@ button{
      }
     .inline { 
     grid-area: 3 / 1 / 4 / 2;
-    margin-bottom: auto;
-    
+    margin: 0 0 0 auto;
+
     }
     a{
     font-size: 15px;
@@ -374,7 +373,7 @@ button{
     .bottom { 
     grid-area: 3 / 2 / 4 / 3; 
     justify-content: flex-end;
-    margin: 2rem;
+    margin: auto;
     
     }
     
