@@ -3,7 +3,7 @@ const searchBar = document.getElementById('searchBar');
 const devInfo = document.getElementById('devProfile');
 
 searchBTN.addEventListener('click', () => {
-
+       
         const userinfo = searchBar.value;
         const url = `https://api.github.com/users/${userinfo}`;
         fetch(url)
