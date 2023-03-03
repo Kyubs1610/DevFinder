@@ -27,7 +27,7 @@ searchBTN.addEventListener('click', () => {
             }
         })
         .catch(err => console.log(err));
-        devInfo.innerHTML = '';
+        devInfo.innerHTML = 'Sorry no user found ';
     });
 
     searchBar.addEventListener('keyup', function (e) {
