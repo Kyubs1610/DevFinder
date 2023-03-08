@@ -7,12 +7,12 @@ searchBTN.addEventListener('click', () => {
         const userinfo = searchBar.value;
         const url = `https://api.github.com/users/${userinfo}`;
         fetch(url)
-        .then(response => {
-            if(!response.ok) {
-                throw new Error('Sorry, no user found');
-             }   
-            return response.json();
-        })
+        .then((response) => {
+            if (!response.ok) {
+                devInfo.innerHTML = '<iframe src="https://giphy.com/embed/5ftsmLIqktHQA" max-width: 100% max-height: 100%; frameBorder="0" class="giphy-embed" allowFullScreen alt="Jurassic park ref"> </iframe>';
+                throw new Error("Ah ah ah, you didn't say the magic word");
+              }
+              return response.json();})
         .then(data => {
             const user = data;
             console.log(data);
@@ -26,9 +26,7 @@ searchBTN.addEventListener('click', () => {
                 devInfo.innerHTML = '';
             }
         })
-        .catch(err => console.log(err));
-        devInfo.innerHTML = 'Sorry no user found ';
-    });
+   });
 
     searchBar.addEventListener('keyup', function (e) {
         if (e.key === 'Enter') {

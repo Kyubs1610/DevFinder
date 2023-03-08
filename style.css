@@ -55,7 +55,7 @@ p{
     font-family: 'Montserrat', sans-serif;
 }
 
-input#searchBar, .container{
+input#searchBar {
     border-radius: 50px;
     border: 1px solid #fff;
     width: 80%;
@@ -89,6 +89,8 @@ button{
 .devInfo{
     display:none;
 }
+
+
 .show{
     display: flex;
     flex-direction: column;
@@ -319,7 +321,7 @@ button{
     height: 80vh;
     }
     
-    .show {
+     .show {
     display: grid;
     grid-template-columns: 40% 60%;
     grid-template-rows: 45% 17% 35%;
@@ -335,6 +337,10 @@ button{
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     
      }
+    .giphy-embed{
+        position:absolute;
+        left: 20dvw;
+    }
     .avatar { 
     grid-area: 1 / 1 / 2 / 2;  
     
@@ -374,5 +380,6 @@ button{
     margin:auto;
    
     }
+   
     
 }
