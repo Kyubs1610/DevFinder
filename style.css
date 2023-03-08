@@ -224,7 +224,7 @@ button{
     }
     .vl{
     position:absolute;
-    width: 70dvh;;
+    width: 70dvh;
     height: 0;
     left: 35%;
     top:0;
@@ -236,7 +236,7 @@ button{
 
     .hl1{
     position:absolute;
-    width: 6dvh;
+    width: 4dvw;
     height: 70dvh;
     top:0;
     border-bottom: 1px solid #fff;
@@ -256,7 +256,7 @@ button{
 
     .hl2{
     position:absolute;
-    width: 6dvh;
+    width:  4dvw;
     height: 25dvh;
     top:0;
     border-bottom: 1px solid #fff;
@@ -276,7 +276,7 @@ button{
 
     .hl3{
      position:absolute;
-     width: 6dvh;
+     width:  4dvw;
      height: 52dvh;
      top:0;
      border-bottom: 1px solid #fff;
