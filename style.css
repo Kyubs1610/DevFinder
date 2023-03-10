@@ -152,7 +152,7 @@ button{
 .bioInfo{
     font-weight: 700;
     word-wrap: break-word;
-    margin: auto;
+    
     
 }
 
@@ -168,10 +168,11 @@ button{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
+   
     }
     .bio{
         width: 70dvw;
+        
     }
 
 }
@@ -360,7 +361,7 @@ button{
     }
     .bioInfo{
     font-weight: 700;
-   
+    
     }
     .bottom { 
     grid-area: 3 / 2 / 4 / 3; 
