@@ -41,7 +41,6 @@ p{
 .findProfile {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: end;
     gap: 1.5em;
     margin-right: 20px;
@@ -86,11 +85,6 @@ button{
    
 }
 
-.devInfo{
-    display:none;
-}
-
-
 .show{
     display: flex;
     flex-direction: column;
@@ -102,6 +96,7 @@ button{
     background: linear-gradient(232.49deg, rgba(4, 90, 64, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
     border: 1px solid #fff;
     margin: 1rem;
+    padding: 0 1rem;
     font-family: 'Montserrat', sans-serif;
     backdrop-filter: blur( 15.5px );
     -webkit-backdrop-filter: blur( 15.5px );
@@ -116,13 +111,12 @@ button{
     border-radius: 50%;
     object-fit: cover;
     margin: 30 auto;
-    display: flex;
-    justify-content: center;
- }
+  }
 
  .stat{
-   width: 20%;
+   width: 20dvw;
    margin: 0 auto;
+   padding: 0 1rem;
     
  }
 .center, .row, .bottom{
@@ -137,7 +131,6 @@ button{
     flex-direction: column;
 }
 .inline{
-    align-self: flex-start;
     flex-direction: column;
     margin: auto;
     display: flex;
@@ -163,37 +156,32 @@ button{
     
 }
 
-.vl{
-    display: hidden;
-}
-
 @media screen and (min-width: 768px) and (max-width: 1023px){
-    .findProfile{
+    .findProfile,.searchinfo{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     }
+
     .bioInfo{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     }
     .bio{
-        width: 40dvw;
+        width: 70dvw;
     }
 
 }
 
 @media screen and (min-width: 1024px){
-    
+   
     .body{
     width: 100dvw;
     height: 100vh;
-    
-    }
-
+      }
     .findProfile{
     display: flex;
     width: 30dvw;
@@ -264,7 +252,7 @@ button{
     border-bottom: 1px solid #fff;
     right: 37%;
     }
-    .hl2::after{
+    .hl2::before{
     content:"";
     display: block;
     width:10px;
@@ -339,7 +327,8 @@ button{
      }
     .giphy-embed{
         position:absolute;
-        left: 20dvw;
+        left: 19dvw;
+        
     }
     .avatar { 
     grid-area: 1 / 1 / 2 / 2;  
@@ -371,15 +360,13 @@ button{
     }
     .bioInfo{
     font-weight: 700;
-    word-wrap: break-word;
-    
+   
     }
     .bottom { 
     grid-area: 3 / 2 / 4 / 3; 
     justify-content: flex-end;
     margin:auto;
-   
+ 
     }
-   
-    
+  
 }
